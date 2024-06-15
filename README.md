@@ -1,6 +1,6 @@
-# Assignment 2
+# Geocoding and reverse geocoding
 
-## Instructions for KDUers to complete the assignment
+## Implemented APIs
 1. The API that must be used for the forward and reverse geocoding must be taken from [postion-stack](https://positionstack.com/)
 2. Caching keys and names format :
     * Forward geocoding key = "#address"
@@ -15,7 +15,7 @@
     * Reverse geocoding = "latitude" , "longitude"
 5. In case of forward geocoding, no caching must be done for the location named - “goa” - it should always be re-fetched.
 
-Your application must have:
+The application also have:
 
 - In-Memory caching support
 - Lookup in an in-memory cache for :
@@ -26,7 +26,7 @@ Your application must have:
 - Avoid evicting too much data out of the cache by selectively updating the entries whenever you alter them
 - Clearly log the mapping for lat/long corresponding to an address, and address corresponding to latitude and longitude.
 
-## This Assignment consists of 8 test cases :
+## This Application consists of 8 test cases :
 1. `testGetGeoCode` -  Test case to verify the successful retrieval of geocoding information from the external API via the `/geocoding` endpoint.
 2. `testGetReverseGeoCode` -  Test case to verify the successful retrieval of reverse geocoding information from the external API via the "/reverse-geocoding" endpoint.
 3. `testGeoCodingCacheHitWithEndpoint` -  Test case to verify that the cache is populated and successfully retrieved on the second call for the geocoding endpoint.
